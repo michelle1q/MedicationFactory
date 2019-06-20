@@ -16,5 +16,6 @@ namespace PharmaFactory.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Deposit> Deposits { get; set; }
     }
 }

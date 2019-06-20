@@ -208,6 +208,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DepositsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -216,6 +217,10 @@
     <Compile Include="Migrations\201906200831438_InitialMigration.cs" />
     <Compile Include="Migrations\201906200831438_InitialMigration.Designer.cs">
       <DependentUpon>201906200831438_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906201052050_DepositModel.cs" />
+    <Compile Include="Migrations\201906201052050_DepositModel.Designer.cs">
+      <DependentUpon>201906201052050_DepositModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -282,6 +287,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Deposits\Create.cshtml" />
+    <Content Include="Views\Deposits\Delete.cshtml" />
+    <Content Include="Views\Deposits\Details.cshtml" />
+    <Content Include="Views\Deposits\Edit.cshtml" />
+    <Content Include="Views\Deposits\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -302,6 +312,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906200831438_InitialMigration.resx">
       <DependentUpon>201906200831438_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906201052050_DepositModel.resx">
+      <DependentUpon>201906201052050_DepositModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
